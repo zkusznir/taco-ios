@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED130E1421A9B058001C898F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED130E1321A9B058001C898F /* Assets.xcassets */; };
+		ED130E1621A9B058001C898F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E1521A9B058001C898F /* AppDelegate.swift */; };
+		ED130E1821A9B058001C898F /* AppWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E1721A9B058001C898F /* AppWindow.swift */; };
+		ED130E1A21A9B058001C898F /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E1921A9B058001C898F /* KeychainManager.swift */; };
+		ED130E1C21A9B058001C898F /* AppStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E1B21A9B058001C898F /* AppStrings.swift */; };
+		ED130E1E21A9B058001C898F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = ED130E1D21A9B058001C898F /* Localizable.strings */; };
+		ED130E2021A9B058001C898F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED130E1F21A9B058001C898F /* LaunchScreen.storyboard */; };
+		ED130E2321A9B058001C898F /* AppNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E2221A9B058001C898F /* AppNavigationViewController.swift */; };
+		ED130E2521A9B058001C898F /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E2421A9B058001C898F /* AppViewController.swift */; };
+		ED130E2721A9B058001C898F /* Animators.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E2621A9B058001C898F /* Animators.swift */; };
+		ED130E2921A9B058001C898F /* AppMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E2821A9B058001C898F /* AppMenuViewController.swift */; };
+		ED130E2B21A9B058001C898F /* AppMenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E2A21A9B058001C898F /* AppMenuPresenter.swift */; };
+		ED130E2D21A9B058001C898F /* AppMenuRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E2C21A9B058001C898F /* AppMenuRouter.swift */; };
+		ED130E2F21A9B058001C898F /* AppMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E2E21A9B058001C898F /* AppMenuCell.swift */; };
+		ED130E3221A9B058001C898F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E3121A9B058001C898F /* API.swift */; };
+		ED130E3521A9B058001C898F /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E3421A9B058001C898F /* AppColors.swift */; };
+		ED130E3721A9B058001C898F /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E3621A9B058001C898F /* AppFonts.swift */; };
+		ED130E3A21A9B058001C898F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E3921A9B058001C898F /* LoginViewController.swift */; };
+		ED130E3C21A9B058001C898F /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E3B21A9B058001C898F /* LoginPresenter.swift */; };
+		ED130E3E21A9B058001C898F /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E3D21A9B058001C898F /* LoginRouter.swift */; };
+		ED130E4021A9B058001C898F /* AppSounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E3F21A9B058001C898F /* AppSounds.swift */; };
+		ED130E4321A9B058001C898F /* click.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E4221A9B058001C898F /* click.wav */; };
+		ED130E4521A9B058001C898F /* click2.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E4421A9B058001C898F /* click2.wav */; };
+		ED130E4721A9B058001C898F /* cyk.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E4621A9B058001C898F /* cyk.wav */; };
+		ED130E4921A9B058001C898F /* gong.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E4821A9B058001C898F /* gong.wav */; };
+		ED130E4B21A9B058001C898F /* hit.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E4A21A9B058001C898F /* hit.wav */; };
+		ED130E4D21A9B058001C898F /* hit2.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E4C21A9B058001C898F /* hit2.wav */; };
+		ED130E4F21A9B058001C898F /* morse.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E4E21A9B058001C898F /* morse.wav */; };
+		ED130E5121A9B058001C898F /* pyk.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5021A9B058001C898F /* pyk.wav */; };
+		ED130E5321A9B058001C898F /* splash.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5221A9B058001C898F /* splash.wav */; };
+		ED130E5521A9B058001C898F /* splash2.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5421A9B058001C898F /* splash2.wav */; };
+		ED130E5721A9B058001C898F /* swipe.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5621A9B058001C898F /* swipe.wav */; };
+		ED130E5921A9B058001C898F /* swipe2.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5821A9B058001C898F /* swipe2.wav */; };
+		ED130E5B21A9B058001C898F /* swipe3.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5A21A9B058001C898F /* swipe3.wav */; };
+		ED130E5D21A9B058001C898F /* teleport.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5C21A9B058001C898F /* teleport.wav */; };
+		ED130E5F21A9B058001C898F /* ticTicTic.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5E21A9B058001C898F /* ticTicTic.wav */; };
+		ED130E6921A9B1C7001C898F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E6821A9B1C7001C898F /* LoginService.swift */; };
+		ED130E6C21A9B934001C898F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E6B21A9B934001C898F /* User.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ED130E0C21A9B058001C898F /* taco_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taco_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED130E1021A9B058001C898F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED130E1321A9B058001C898F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED130E1521A9B058001C898F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED130E1721A9B058001C898F /* AppWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppWindow.swift; sourceTree = "<group>"; };
+		ED130E1921A9B058001C898F /* KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		ED130E1B21A9B058001C898F /* AppStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStrings.swift; sourceTree = "<group>"; };
+		ED130E1D21A9B058001C898F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		ED130E1F21A9B058001C898F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED130E2221A9B058001C898F /* AppNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationViewController.swift; sourceTree = "<group>"; };
+		ED130E2421A9B058001C898F /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		ED130E2621A9B058001C898F /* Animators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animators.swift; sourceTree = "<group>"; };
+		ED130E2821A9B058001C898F /* AppMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuViewController.swift; sourceTree = "<group>"; };
+		ED130E2A21A9B058001C898F /* AppMenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuPresenter.swift; sourceTree = "<group>"; };
+		ED130E2C21A9B058001C898F /* AppMenuRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuRouter.swift; sourceTree = "<group>"; };
+		ED130E2E21A9B058001C898F /* AppMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMenuCell.swift; sourceTree = "<group>"; };
+		ED130E3121A9B058001C898F /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		ED130E3421A9B058001C898F /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		ED130E3621A9B058001C898F /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		ED130E3921A9B058001C898F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		ED130E3B21A9B058001C898F /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		ED130E3D21A9B058001C898F /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		ED130E3F21A9B058001C898F /* AppSounds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSounds.swift; sourceTree = "<group>"; };
+		ED130E4221A9B058001C898F /* click.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click.wav; sourceTree = "<group>"; };
+		ED130E4421A9B058001C898F /* click2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = click2.wav; sourceTree = "<group>"; };
+		ED130E4621A9B058001C898F /* cyk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cyk.wav; sourceTree = "<group>"; };
+		ED130E4821A9B058001C898F /* gong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gong.wav; sourceTree = "<group>"; };
+		ED130E4A21A9B058001C898F /* hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hit.wav; sourceTree = "<group>"; };
+		ED130E4C21A9B058001C898F /* hit2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hit2.wav; sourceTree = "<group>"; };
+		ED130E4E21A9B058001C898F /* morse.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = morse.wav; sourceTree = "<group>"; };
+		ED130E5021A9B058001C898F /* pyk.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pyk.wav; sourceTree = "<group>"; };
+		ED130E5221A9B058001C898F /* splash.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = splash.wav; sourceTree = "<group>"; };
+		ED130E5421A9B058001C898F /* splash2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = splash2.wav; sourceTree = "<group>"; };
+		ED130E5621A9B058001C898F /* swipe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swipe.wav; sourceTree = "<group>"; };
+		ED130E5821A9B058001C898F /* swipe2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swipe2.wav; sourceTree = "<group>"; };
+		ED130E5A21A9B058001C898F /* swipe3.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = swipe3.wav; sourceTree = "<group>"; };
+		ED130E5C21A9B058001C898F /* teleport.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = teleport.wav; sourceTree = "<group>"; };
+		ED130E5E21A9B058001C898F /* ticTicTic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ticTicTic.wav; sourceTree = "<group>"; };
+		ED130E6821A9B1C7001C898F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		ED130E6B21A9B934001C898F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED130E0921A9B058001C898F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED130E0321A9B058001C898F = {
+			isa = PBXGroup;
+			children = (
+				ED130E0E21A9B058001C898F /* taco_ios */,
+				ED130E0D21A9B058001C898F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED130E0D21A9B058001C898F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E0C21A9B058001C898F /* taco_ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED130E0E21A9B058001C898F /* taco_ios */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E1521A9B058001C898F /* AppDelegate.swift */,
+				ED130E0F21A9B058001C898F /* ConfigFiles */,
+				ED130E1221A9B058001C898F /* Resources */,
+				ED130E3021A9B058001C898F /* API */,
+				ED130E6A21A9B203001C898F /* Menu */,
+				ED130E3821A9B058001C898F /* Login */,
+			);
+			path = taco_ios;
+			sourceTree = "<group>";
+		};
+		ED130E0F21A9B058001C898F /* ConfigFiles */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E1021A9B058001C898F /* Info.plist */,
+				ED130E1721A9B058001C898F /* AppWindow.swift */,
+				ED130E1921A9B058001C898F /* KeychainManager.swift */,
+				ED130E1B21A9B058001C898F /* AppStrings.swift */,
+				ED130E1D21A9B058001C898F /* Localizable.strings */,
+				ED130E1F21A9B058001C898F /* LaunchScreen.storyboard */,
+				ED130E2121A9B058001C898F /* AppBaseControllers */,
+				ED130E3321A9B058001C898F /* AppLayout */,
+			);
+			name = ConfigFiles;
+			sourceTree = "<group>";
+		};
+		ED130E1221A9B058001C898F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E1321A9B058001C898F /* Assets.xcassets */,
+				ED130E3F21A9B058001C898F /* AppSounds.swift */,
+				ED130E4121A9B058001C898F /* Sounds */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		ED130E2121A9B058001C898F /* AppBaseControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E2221A9B058001C898F /* AppNavigationViewController.swift */,
+				ED130E2421A9B058001C898F /* AppViewController.swift */,
+				ED130E2621A9B058001C898F /* Animators.swift */,
+			);
+			name = AppBaseControllers;
+			sourceTree = "<group>";
+		};
+		ED130E3021A9B058001C898F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E3121A9B058001C898F /* API.swift */,
+				ED130E6821A9B1C7001C898F /* LoginService.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		ED130E3321A9B058001C898F /* AppLayout */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E3421A9B058001C898F /* AppColors.swift */,
+				ED130E3621A9B058001C898F /* AppFonts.swift */,
+			);
+			name = AppLayout;
+			sourceTree = "<group>";
+		};
+		ED130E3821A9B058001C898F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E3921A9B058001C898F /* LoginViewController.swift */,
+				ED130E3B21A9B058001C898F /* LoginPresenter.swift */,
+				ED130E3D21A9B058001C898F /* LoginRouter.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		ED130E4121A9B058001C898F /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E4221A9B058001C898F /* click.wav */,
+				ED130E4421A9B058001C898F /* click2.wav */,
+				ED130E4621A9B058001C898F /* cyk.wav */,
+				ED130E4821A9B058001C898F /* gong.wav */,
+				ED130E4A21A9B058001C898F /* hit.wav */,
+				ED130E4C21A9B058001C898F /* hit2.wav */,
+				ED130E4E21A9B058001C898F /* morse.wav */,
+				ED130E5021A9B058001C898F /* pyk.wav */,
+				ED130E5221A9B058001C898F /* splash.wav */,
+				ED130E5421A9B058001C898F /* splash2.wav */,
+				ED130E5621A9B058001C898F /* swipe.wav */,
+				ED130E5821A9B058001C898F /* swipe2.wav */,
+				ED130E5A21A9B058001C898F /* swipe3.wav */,
+				ED130E5C21A9B058001C898F /* teleport.wav */,
+				ED130E5E21A9B058001C898F /* ticTicTic.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		ED130E6A21A9B203001C898F /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				ED130E2821A9B058001C898F /* AppMenuViewController.swift */,
+				ED130E2A21A9B058001C898F /* AppMenuPresenter.swift */,
+				ED130E2C21A9B058001C898F /* AppMenuRouter.swift */,
+				ED130E2E21A9B058001C898F /* AppMenuCell.swift */,
+				ED130E6B21A9B934001C898F /* User.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED130E0B21A9B058001C898F /* taco_ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED130E6521A9B059001C898F /* Build configuration list for PBXNativeTarget "taco_ios" */;
+			buildPhases = (
+				ED130E0821A9B058001C898F /* Sources */,
+				ED130E0921A9B058001C898F /* Frameworks */,
+				ED130E0A21A9B058001C898F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = taco_ios;
+			productName = taco_ios;
+			productReference = ED130E0C21A9B058001C898F /* taco_ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED130E0421A9B058001C898F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Przemyslaw Biskup";
+				TargetAttributes = {
+					ED130E0B21A9B058001C898F = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = ED130E0721A9B058001C898F /* Build configuration list for PBXProject "taco_ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED130E0321A9B058001C898F;
+			productRefGroup = ED130E0D21A9B058001C898F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED130E0B21A9B058001C898F /* taco_ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED130E0A21A9B058001C898F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED130E5921A9B058001C898F /* swipe2.wav in Resources */,
+				ED130E5521A9B058001C898F /* splash2.wav in Resources */,
+				ED130E4521A9B058001C898F /* click2.wav in Resources */,
+				ED130E5321A9B058001C898F /* splash.wav in Resources */,
+				ED130E4F21A9B058001C898F /* morse.wav in Resources */,
+				ED130E1421A9B058001C898F /* Assets.xcassets in Resources */,
+				ED130E5121A9B058001C898F /* pyk.wav in Resources */,
+				ED130E2021A9B058001C898F /* LaunchScreen.storyboard in Resources */,
+				ED130E4721A9B058001C898F /* cyk.wav in Resources */,
+				ED130E4321A9B058001C898F /* click.wav in Resources */,
+				ED130E5F21A9B058001C898F /* ticTicTic.wav in Resources */,
+				ED130E4D21A9B058001C898F /* hit2.wav in Resources */,
+				ED130E1E21A9B058001C898F /* Localizable.strings in Resources */,
+				ED130E4B21A9B058001C898F /* hit.wav in Resources */,
+				ED130E5721A9B058001C898F /* swipe.wav in Resources */,
+				ED130E5D21A9B058001C898F /* teleport.wav in Resources */,
+				ED130E5B21A9B058001C898F /* swipe3.wav in Resources */,
+				ED130E4921A9B058001C898F /* gong.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED130E0821A9B058001C898F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED130E6921A9B1C7001C898F /* LoginService.swift in Sources */,
+				ED130E3C21A9B058001C898F /* LoginPresenter.swift in Sources */,
+				ED130E2521A9B058001C898F /* AppViewController.swift in Sources */,
+				ED130E2321A9B058001C898F /* AppNavigationViewController.swift in Sources */,
+				ED130E3721A9B058001C898F /* AppFonts.swift in Sources */,
+				ED130E3A21A9B058001C898F /* LoginViewController.swift in Sources */,
+				ED130E1621A9B058001C898F /* AppDelegate.swift in Sources */,
+				ED130E3E21A9B058001C898F /* LoginRouter.swift in Sources */,
+				ED130E6C21A9B934001C898F /* User.swift in Sources */,
+				ED130E3521A9B058001C898F /* AppColors.swift in Sources */,
+				ED130E2D21A9B058001C898F /* AppMenuRouter.swift in Sources */,
+				ED130E2921A9B058001C898F /* AppMenuViewController.swift in Sources */,
+				ED130E2B21A9B058001C898F /* AppMenuPresenter.swift in Sources */,
+				ED130E1A21A9B058001C898F /* KeychainManager.swift in Sources */,
+				ED130E2F21A9B058001C898F /* AppMenuCell.swift in Sources */,
+				ED130E4021A9B058001C898F /* AppSounds.swift in Sources */,
+				ED130E2721A9B058001C898F /* Animators.swift in Sources */,
+				ED130E1C21A9B058001C898F /* AppStrings.swift in Sources */,
+				ED130E3221A9B058001C898F /* API.swift in Sources */,
+				ED130E1821A9B058001C898F /* AppWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ED130E6321A9B059001C898F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED130E6421A9B059001C898F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED130E6621A9B059001C898F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33PBA72JFF;
+				INFOPLIST_FILE = taco_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Primo.taco-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED130E6721A9B059001C898F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33PBA72JFF;
+				INFOPLIST_FILE = taco_ios/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Primo.taco-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED130E0721A9B058001C898F /* Build configuration list for PBXProject "taco_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED130E6321A9B059001C898F /* Debug */,
+				ED130E6421A9B059001C898F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED130E6521A9B059001C898F /* Build configuration list for PBXNativeTarget "taco_ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED130E6621A9B059001C898F /* Debug */,
+				ED130E6721A9B059001C898F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED130E0421A9B058001C898F /* Project object */;
+}

@@ -1,0 +1,41 @@
+//
+//  Localizable.strings
+//  AppLover Base Project Template
+//
+//  Created by Przemyslaw Biskup on 03/01/2018.
+
+
+/*
+ * MENU
+ */
+
+"_homeBtnTitle" = "HOME";
+"_influencersBtnTitle" = "CELEBRYCI";
+"_brandsBtnTitle" = "MARKI";
+"_categoryBtnTitle" = "KATEGORIE";
+"_userBtnTitle" = "LOG IN";
+
+/*
+ * InfluencersArea
+ */
+
+"_InfluencersViewControllerTitle" = "Celebryci";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
