@@ -31,8 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window.rootViewController = splitVC
         
-        UIApplication.shared.statusBarStyle = .lightContent
-        
         return true
     }
 

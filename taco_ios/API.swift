@@ -10,7 +10,7 @@ import Foundation
 
 class RestAPI {
     
-    private let baseURL = "https://acme-data-base.herokuapp.com/"
+    private let baseURL = "https://taco-backend.herokuapp.com/api/v1/"
     
     private var headers: [String: String] {
         return ["Accept": "application/json"]
@@ -22,9 +22,7 @@ class RestAPI {
     }
     
     enum Endpoint: String {
-        case employees
-        case colors
-        case projects
+        case users
     }
     
     enum Result {
@@ -35,7 +33,7 @@ class RestAPI {
     func request(method: Method, endpoint: Endpoint, id: Int? = nil, completionHandler: @escaping (Result) -> Void) {
         var urlString = baseURL + endpoint.rawValue
         if let id = id { urlString = urlString + "/" + String(id) }
-        if method == .GET { urlString = urlString + ".json"}
+//        if method == .GET { urlString = urlString + ".json"}
         
         guard let url = URL(string: urlString) else { return }
         var request = URLRequest(url: url)
@@ -78,5 +76,31 @@ class RestAPI {
             }
         }
         dataTask.resume()
+    }
+    
+    func fetchUser(id: Int, completionHandler: @escaping (User?) -> Void) {
+        request(method: .GET, endpoint: .users, id: id) { result in
+            switch result {
+            case .succes(let jsonData):
+                
+                guard let json = jsonData as? [[String: Any]] else {
+//                    BasicAlert.showInfoAlert(title: "Error", message: "There is no json data as [[String: Any]]")
+                    return
+                }
+                
+//                let array = json.compactMap { dict -> Employ? in
+//                    guard let id = dict["id"] as? Int,
+//                        let name = dict["name"] as? String,
+//                        let surName = dict["surname"] as? String else {
+//                            return nil
+//                    }
+//                    return Employ(id: String(id), name: name, surName: surName)
+//                }
+//                completionHandler(array)
+//
+            case .failure(let error):
+                print("error")
+            }
+        }
     }
 }

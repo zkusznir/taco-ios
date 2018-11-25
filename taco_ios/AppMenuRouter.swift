@@ -16,6 +16,25 @@ final class AppMenuRouter {
         self.source = source
     }
     
-    
+    func showLogin() {
+        let nc = AppNavigationController()
+        nc.viewControllers = [LoginViewController()]
+        source?.splitViewController?.showDetailViewController(nc, sender: nil)
+    }
+    func showAccount() {
+        let nc = AppNavigationController()
+        nc.viewControllers = [AccountViewController()]
+        source?.splitViewController?.showDetailViewController(nc, sender: nil)
+    }
+    func showTransactions() {
+        let nc = AppNavigationController()
+        nc.viewControllers = [TransactionsViewController()]
+        source?.splitViewController?.showDetailViewController(nc, sender: nil)
+    }
+    func showFamily() {
+        let nc = AppNavigationController()
+        nc.viewControllers = [FamilyViewController()]
+        source?.splitViewController?.showDetailViewController(nc, sender: nil)
+    }
     
 }

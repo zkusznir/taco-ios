@@ -21,24 +21,48 @@ final class AppMenuPresenter {
     }
     
     var currentMenu: [MenuPosition] {
-        guard User.current != nil else { return [.login] }
-        return [.cos]
+//        guard User.current != nil else { return [.logIn] }
+        return [.account, .transactions, .family, .logOut]
     }
     
     
 }
 
 enum MenuPosition: Int, CaseIterable {
-    case login
-    case cos
+    case logIn
+    case account
+    case transactions
+    case family
+    case logOut
     
     
     var string: String {
         switch self {
-        case .login:
-            return "Log in"
-        case .cos:
-            return "cos"
+        case .logIn:
+            return "zaloguj"
+        case .account:
+            return "konto"
+        case .transactions:
+            return "transakcje"
+        case .family:
+            return "rodzina"
+        case .logOut:
+            return "wyloguj"
+        }
+    }
+    
+    var icon: UIImage {
+        switch self {
+        case .logIn:
+            return #imageLiteral(resourceName: "logout.png")
+        case .account:
+            return #imageLiteral(resourceName: "account.png")
+        case .transactions:
+            return #imageLiteral(resourceName: "transactions.png")
+        case .family:
+            return #imageLiteral(resourceName: "family.png")
+        case .logOut:
+            return #imageLiteral(resourceName: "logout.png")
         }
     }
 }

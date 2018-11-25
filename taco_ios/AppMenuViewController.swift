@@ -19,9 +19,16 @@ final class AppMenuViewController: AppViewController {
     
     private let tableView = UITableView()
     
+    private let backImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleToFill
+        imageView.image = #imageLiteral(resourceName: "menuBackground.png")
+        return imageView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "menu"
         User.view = self
         tableView.dataSource = self
         tableView.delegate = self
@@ -46,6 +53,7 @@ extension AppMenuViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AppMenuCell.self)) as! AppMenuCell
         cell.titleLabel.text = presenter.currentMenu[indexPath.row].string
+        cell.iconImageView.image = presenter.currentMenu[indexPath.row].icon
         return cell
     }
 }
@@ -55,11 +63,15 @@ extension AppMenuViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         AppSounds.touchUpInside.play()
         switch presenter.currentMenu[indexPath.row] {
-        case .login:
-            let nc = AppNavigationController()
-            nc.viewControllers = [LoginViewController()]
-            self.splitViewController?.showDetailViewController(nc, sender: nil)
-        case .cos:
+        case .logIn:
+            router.showLogin()
+        case .account:
+            router.showAccount()
+        case .transactions:
+            router.showTransactions()
+        case .family:
+            router.showFamily()
+        case .logOut:
             break
         }
     }
@@ -72,9 +84,16 @@ extension AppMenuViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         // adding views
+        view.addSubview(backImageView)
         view.addSubview(tableView)
         
         // adding constraints
+        
+        backImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        backImageView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        backImageView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        backImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
         tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 100).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true

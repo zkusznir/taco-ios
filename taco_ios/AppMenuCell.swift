@@ -10,14 +10,6 @@ import UIKit
 
 final class AppMenuCell: UITableViewCell {
     
-    private let backView: UIView = {
-        let view = UIView()
-        view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = AppColors.buttonBackground
-        view.layer.cornerRadius = 6.0
-        return view
-    }()
-    
     private let cellStackView: UIStackView = {
         let stackView = UIStackView()
         stackView.translatesAutoresizingMaskIntoConstraints = false
@@ -32,7 +24,6 @@ final class AppMenuCell: UITableViewCell {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
-        imageView.image = #imageLiteral(resourceName: "star.png")
         return imageView
     }()
     
@@ -57,17 +48,10 @@ final class AppMenuCell: UITableViewCell {
         
         self.backgroundColor = .clear
         
-        self.addSubview(backView)
         self.addSubview(cellStackView)
         
         cellStackView.addArrangedSubview(iconImageView)
         cellStackView.addArrangedSubview(titleLabel)
-        
-        backView.topAnchor.constraint(equalTo: self.topAnchor, constant: 4).isActive = true
-        backView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 8).isActive = true
-        backView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -8).isActive = true
-        backView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -4).isActive = true
-        backView.heightAnchor.constraint(equalToConstant: 45).isActive = true
         
         cellStackView.topAnchor.constraint(equalTo: self.topAnchor, constant: 4).isActive = true
         cellStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 8).isActive = true

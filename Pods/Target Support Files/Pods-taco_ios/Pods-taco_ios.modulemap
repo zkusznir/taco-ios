@@ -1,0 +1,6 @@
+framework module Pods_taco_ios {
+  umbrella header "Pods-taco_ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -45,9 +45,30 @@
 		ED130E5F21A9B058001C898F /* ticTicTic.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5E21A9B058001C898F /* ticTicTic.wav */; };
 		ED130E6921A9B1C7001C898F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E6821A9B1C7001C898F /* LoginService.swift */; };
 		ED130E6C21A9B934001C898F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E6B21A9B934001C898F /* User.swift */; };
+		ED5DA1AD21AA01C900DBFEDB /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1A821AA01C900DBFEDB /* AccountPresenter.swift */; };
+		ED5DA1AE21AA01C900DBFEDB /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1A921AA01C900DBFEDB /* AccountRouter.swift */; };
+		ED5DA1AF21AA01C900DBFEDB /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1AA21AA01C900DBFEDB /* AccountViewController.swift */; };
+		ED5DA1B021AA01C900DBFEDB /* AccountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1AB21AA01C900DBFEDB /* AccountCell.swift */; };
+		ED5DA1B121AA01C900DBFEDB /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1AC21AA01C900DBFEDB /* AccountModel.swift */; };
+		ED5DA1B721AA01E500DBFEDB /* TransactionsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1B221AA01E500DBFEDB /* TransactionsPresenter.swift */; };
+		ED5DA1B821AA01E500DBFEDB /* TransactionsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1B321AA01E500DBFEDB /* TransactionsRouter.swift */; };
+		ED5DA1B921AA01E500DBFEDB /* TransactionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1B421AA01E500DBFEDB /* TransactionsViewController.swift */; };
+		ED5DA1BA21AA01E500DBFEDB /* TransactionsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1B521AA01E500DBFEDB /* TransactionsCell.swift */; };
+		ED5DA1BB21AA01E500DBFEDB /* TransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1B621AA01E500DBFEDB /* TransactionsModel.swift */; };
+		ED5DA1C121AA020200DBFEDB /* FamilyPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1BC21AA020200DBFEDB /* FamilyPresenter.swift */; };
+		ED5DA1C221AA020200DBFEDB /* FamilyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1BD21AA020200DBFEDB /* FamilyRouter.swift */; };
+		ED5DA1C321AA020200DBFEDB /* FamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1BE21AA020200DBFEDB /* FamilyViewController.swift */; };
+		ED5DA1C421AA020200DBFEDB /* FamilyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1BF21AA020200DBFEDB /* FamilyCell.swift */; };
+		ED5DA1C521AA020200DBFEDB /* FamilyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1C021AA020200DBFEDB /* FamilyModel.swift */; };
+		ED5DA1C721AA2E5000DBFEDB /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1C621AA2E5000DBFEDB /* HeaderViewController.swift */; };
+		ED5DA1C921AA2E7900DBFEDB /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1C821AA2E7900DBFEDB /* BaseCell.swift */; };
+		FF3E717C8FF16CAC8A7CF298 /* Pods_taco_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A98D70FBBD582AE6FFDC34D /* Pods_taco_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A98D70FBBD582AE6FFDC34D /* Pods_taco_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taco_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D47CDA9774E40A97671912C /* Pods-taco_ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taco_ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-taco_ios/Pods-taco_ios.release.xcconfig"; sourceTree = "<group>"; };
+		6EDE8F20E38F91F90C1C5E58 /* Pods-taco_ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taco_ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-taco_ios/Pods-taco_ios.debug.xcconfig"; sourceTree = "<group>"; };
 		ED130E0C21A9B058001C898F /* taco_ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taco_ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED130E1021A9B058001C898F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED130E1321A9B058001C898F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -88,6 +109,23 @@
 		ED130E5E21A9B058001C898F /* ticTicTic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ticTicTic.wav; sourceTree = "<group>"; };
 		ED130E6821A9B1C7001C898F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		ED130E6B21A9B934001C898F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ED5DA1A821AA01C900DBFEDB /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
+		ED5DA1A921AA01C900DBFEDB /* AccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
+		ED5DA1AA21AA01C900DBFEDB /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		ED5DA1AB21AA01C900DBFEDB /* AccountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCell.swift; sourceTree = "<group>"; };
+		ED5DA1AC21AA01C900DBFEDB /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		ED5DA1B221AA01E500DBFEDB /* TransactionsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsPresenter.swift; sourceTree = "<group>"; };
+		ED5DA1B321AA01E500DBFEDB /* TransactionsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsRouter.swift; sourceTree = "<group>"; };
+		ED5DA1B421AA01E500DBFEDB /* TransactionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsViewController.swift; sourceTree = "<group>"; };
+		ED5DA1B521AA01E500DBFEDB /* TransactionsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsCell.swift; sourceTree = "<group>"; };
+		ED5DA1B621AA01E500DBFEDB /* TransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionsModel.swift; sourceTree = "<group>"; };
+		ED5DA1BC21AA020200DBFEDB /* FamilyPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyPresenter.swift; sourceTree = "<group>"; };
+		ED5DA1BD21AA020200DBFEDB /* FamilyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyRouter.swift; sourceTree = "<group>"; };
+		ED5DA1BE21AA020200DBFEDB /* FamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyViewController.swift; sourceTree = "<group>"; };
+		ED5DA1BF21AA020200DBFEDB /* FamilyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyCell.swift; sourceTree = "<group>"; };
+		ED5DA1C021AA020200DBFEDB /* FamilyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyModel.swift; sourceTree = "<group>"; };
+		ED5DA1C621AA2E5000DBFEDB /* HeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
+		ED5DA1C821AA2E7900DBFEDB /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,17 +133,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF3E717C8FF16CAC8A7CF298 /* Pods_taco_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2644BE6B299AEC064FC4CB90 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A98D70FBBD582AE6FFDC34D /* Pods_taco_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7BEA1DD6E01096B3CCC6CF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6EDE8F20E38F91F90C1C5E58 /* Pods-taco_ios.debug.xcconfig */,
+				3D47CDA9774E40A97671912C /* Pods-taco_ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED130E0321A9B058001C898F = {
 			isa = PBXGroup;
 			children = (
 				ED130E0E21A9B058001C898F /* taco_ios */,
 				ED130E0D21A9B058001C898F /* Products */,
+				E7BEA1DD6E01096B3CCC6CF1 /* Pods */,
+				2644BE6B299AEC064FC4CB90 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +184,9 @@
 				ED130E3021A9B058001C898F /* API */,
 				ED130E6A21A9B203001C898F /* Menu */,
 				ED130E3821A9B058001C898F /* Login */,
+				ED5DA1A521AA00EF00DBFEDB /* Account */,
+				ED5DA1A621AA00FF00DBFEDB /* Transactions */,
+				ED5DA1A721AA013D00DBFEDB /* Family */,
 			);
 			path = taco_ios;
 			sourceTree = "<group>";
@@ -160,6 +221,8 @@
 			children = (
 				ED130E2221A9B058001C898F /* AppNavigationViewController.swift */,
 				ED130E2421A9B058001C898F /* AppViewController.swift */,
+				ED5DA1C621AA2E5000DBFEDB /* HeaderViewController.swift */,
+				ED5DA1C821AA2E7900DBFEDB /* BaseCell.swift */,
 				ED130E2621A9B058001C898F /* Animators.swift */,
 			);
 			name = AppBaseControllers;
@@ -227,6 +290,42 @@
 			name = Menu;
 			sourceTree = "<group>";
 		};
+		ED5DA1A521AA00EF00DBFEDB /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				ED5DA1AA21AA01C900DBFEDB /* AccountViewController.swift */,
+				ED5DA1A821AA01C900DBFEDB /* AccountPresenter.swift */,
+				ED5DA1A921AA01C900DBFEDB /* AccountRouter.swift */,
+				ED5DA1AC21AA01C900DBFEDB /* AccountModel.swift */,
+				ED5DA1AB21AA01C900DBFEDB /* AccountCell.swift */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		ED5DA1A621AA00FF00DBFEDB /* Transactions */ = {
+			isa = PBXGroup;
+			children = (
+				ED5DA1B421AA01E500DBFEDB /* TransactionsViewController.swift */,
+				ED5DA1B221AA01E500DBFEDB /* TransactionsPresenter.swift */,
+				ED5DA1B321AA01E500DBFEDB /* TransactionsRouter.swift */,
+				ED5DA1B621AA01E500DBFEDB /* TransactionsModel.swift */,
+				ED5DA1B521AA01E500DBFEDB /* TransactionsCell.swift */,
+			);
+			name = Transactions;
+			sourceTree = "<group>";
+		};
+		ED5DA1A721AA013D00DBFEDB /* Family */ = {
+			isa = PBXGroup;
+			children = (
+				ED5DA1BE21AA020200DBFEDB /* FamilyViewController.swift */,
+				ED5DA1BC21AA020200DBFEDB /* FamilyPresenter.swift */,
+				ED5DA1BD21AA020200DBFEDB /* FamilyRouter.swift */,
+				ED5DA1C021AA020200DBFEDB /* FamilyModel.swift */,
+				ED5DA1BF21AA020200DBFEDB /* FamilyCell.swift */,
+			);
+			name = Family;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -234,9 +333,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED130E6521A9B059001C898F /* Build configuration list for PBXNativeTarget "taco_ios" */;
 			buildPhases = (
+				28AB1185E116943996828B8F /* [CP] Check Pods Manifest.lock */,
 				ED130E0821A9B058001C898F /* Sources */,
 				ED130E0921A9B058001C898F /* Frameworks */,
 				ED130E0A21A9B058001C898F /* Resources */,
+				005276D241BF855FF06C7722 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -308,6 +409,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		005276D241BF855FF06C7722 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-taco_ios/Pods-taco_ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-taco_ios/Pods-taco_ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28AB1185E116943996828B8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-taco_ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ED130E0821A9B058001C898F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -319,19 +467,36 @@
 				ED130E2321A9B058001C898F /* AppNavigationViewController.swift in Sources */,
 				ED130E3721A9B058001C898F /* AppFonts.swift in Sources */,
 				ED130E3A21A9B058001C898F /* LoginViewController.swift in Sources */,
+				ED5DA1AE21AA01C900DBFEDB /* AccountRouter.swift in Sources */,
 				ED130E1621A9B058001C898F /* AppDelegate.swift in Sources */,
+				ED5DA1AD21AA01C900DBFEDB /* AccountPresenter.swift in Sources */,
+				ED5DA1C321AA020200DBFEDB /* FamilyViewController.swift in Sources */,
+				ED5DA1B721AA01E500DBFEDB /* TransactionsPresenter.swift in Sources */,
 				ED130E3E21A9B058001C898F /* LoginRouter.swift in Sources */,
+				ED5DA1C721AA2E5000DBFEDB /* HeaderViewController.swift in Sources */,
 				ED130E6C21A9B934001C898F /* User.swift in Sources */,
 				ED130E3521A9B058001C898F /* AppColors.swift in Sources */,
 				ED130E2D21A9B058001C898F /* AppMenuRouter.swift in Sources */,
+				ED5DA1B921AA01E500DBFEDB /* TransactionsViewController.swift in Sources */,
 				ED130E2921A9B058001C898F /* AppMenuViewController.swift in Sources */,
+				ED5DA1C221AA020200DBFEDB /* FamilyRouter.swift in Sources */,
 				ED130E2B21A9B058001C898F /* AppMenuPresenter.swift in Sources */,
+				ED5DA1C421AA020200DBFEDB /* FamilyCell.swift in Sources */,
+				ED5DA1C121AA020200DBFEDB /* FamilyPresenter.swift in Sources */,
+				ED5DA1C521AA020200DBFEDB /* FamilyModel.swift in Sources */,
 				ED130E1A21A9B058001C898F /* KeychainManager.swift in Sources */,
+				ED5DA1AF21AA01C900DBFEDB /* AccountViewController.swift in Sources */,
+				ED5DA1B021AA01C900DBFEDB /* AccountCell.swift in Sources */,
 				ED130E2F21A9B058001C898F /* AppMenuCell.swift in Sources */,
+				ED5DA1C921AA2E7900DBFEDB /* BaseCell.swift in Sources */,
 				ED130E4021A9B058001C898F /* AppSounds.swift in Sources */,
+				ED5DA1B121AA01C900DBFEDB /* AccountModel.swift in Sources */,
 				ED130E2721A9B058001C898F /* Animators.swift in Sources */,
 				ED130E1C21A9B058001C898F /* AppStrings.swift in Sources */,
+				ED5DA1B821AA01E500DBFEDB /* TransactionsRouter.swift in Sources */,
 				ED130E3221A9B058001C898F /* API.swift in Sources */,
+				ED5DA1BA21AA01E500DBFEDB /* TransactionsCell.swift in Sources */,
+				ED5DA1BB21AA01E500DBFEDB /* TransactionsModel.swift in Sources */,
 				ED130E1821A9B058001C898F /* AppWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,11 +622,13 @@
 		};
 		ED130E6621A9B059001C898F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EDE8F20E38F91F90C1C5E58 /* Pods-taco_ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33PBA72JFF;
 				INFOPLIST_FILE = taco_ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,11 +642,13 @@
 		};
 		ED130E6721A9B059001C898F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D47CDA9774E40A97671912C /* Pods-taco_ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 33PBA72JFF;
 				INFOPLIST_FILE = taco_ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
