@@ -51,6 +51,8 @@ class BaseCell: UITableViewCell {
         return label
     }()
     
+    var constTop: NSLayoutConstraint?
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -79,8 +81,9 @@ class BaseCell: UITableViewCell {
         iconImageView.centerXAnchor.constraint(equalTo: shadowView.centerXAnchor).isActive = true
         iconImageView.centerYAnchor.constraint(equalTo: shadowView.centerYAnchor).isActive = true
         
+        constTop = upperLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 16)
+        constTop?.isActive = true
         upperLabel.leadingAnchor.constraint(equalTo: shadowView.trailingAnchor, constant: 16).isActive = true
-        upperLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 16).isActive = true
         
         loverLabel.leadingAnchor.constraint(equalTo: shadowView.trailingAnchor, constant: 16).isActive = true
         loverLabel.topAnchor.constraint(equalTo: upperLabel.bottomAnchor, constant: 8).isActive = true

@@ -114,13 +114,15 @@ extension FamilyDetailsViewController: FamilyDetailsViewProtocol {
 extension FamilyDetailsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter.groups.count
+        return presenter.members.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: FamilyCell.self)) as! FamilyCell
-        cell.upperLabel.text = presenter.groups[indexPath.row].name
-        cell.loverLabel.text = "\(presenter.groups[indexPath.row].usersCount)"
+        cell.upperLabel.text = presenter.members[indexPath.row].name
+        cell.loverLabel.text = ""
         cell.rightLabel.text = ""
+        cell.iconImageView.image = #imageLiteral(resourceName: "bluePerson.png")
+        cell.constTop?.constant = 24
         return cell
     }
 }
@@ -173,6 +175,8 @@ extension FamilyDetailsViewController {
         tableView.topAnchor.constraint(equalTo: selectLineView.bottomAnchor, constant: 4).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: bottomImageView.topAnchor).isActive = true
+        
+        bottomImageView.isHidden = false
     }
 }

@@ -108,6 +108,8 @@ extension FamilyViewController {
         tableView.topAnchor.constraint(equalTo: lineView.bottomAnchor, constant: 4).isActive = true
         tableView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor).isActive = true
         tableView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor).isActive = true
-        tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
+        tableView.bottomAnchor.constraint(equalTo: bottomImageView.topAnchor).isActive = true
+        
+        bottomImageView.isHidden = false
     }
 }
