@@ -36,6 +36,8 @@ final class TransactionsViewController: HeaderViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        presenter.fetch()
+        
         titleLabel.text = "Transakcje"
         iconImageView.image = #imageLiteral(resourceName: "bank")
         upperLabel.text = "dostępne środki"
@@ -50,16 +52,21 @@ final class TransactionsViewController: HeaderViewController {
 }
 
 extension TransactionsViewController: TransactionsViewProtocol {
-    
+    func refresh() {
+        tableView.reloadData()
+    }
 }
 
 extension TransactionsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 7
+        return 4
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: TransactionsCell.self)) as! TransactionsCell
+        cell.upperLabel.text = "płatność kartą"
+        cell.loverLabel.text = "20:52 16.08.2018"
+        cell.rightLabel.text = "425,23 PLN"
         return cell
     }
 }

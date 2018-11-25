@@ -45,6 +45,11 @@
 		ED130E5F21A9B058001C898F /* ticTicTic.wav in Resources */ = {isa = PBXBuildFile; fileRef = ED130E5E21A9B058001C898F /* ticTicTic.wav */; };
 		ED130E6921A9B1C7001C898F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E6821A9B1C7001C898F /* LoginService.swift */; };
 		ED130E6C21A9B934001C898F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED130E6B21A9B934001C898F /* User.swift */; };
+		ED14FA7821AAA30F002B65E0 /* FamilyDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED14FA7321AAA30F002B65E0 /* FamilyDetailsPresenter.swift */; };
+		ED14FA7921AAA30F002B65E0 /* FamilyDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED14FA7421AAA30F002B65E0 /* FamilyDetailsRouter.swift */; };
+		ED14FA7A21AAA30F002B65E0 /* FamilyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED14FA7521AAA30F002B65E0 /* FamilyDetailsViewController.swift */; };
+		ED14FA7B21AAA30F002B65E0 /* FamilyDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED14FA7621AAA30F002B65E0 /* FamilyDetailsCell.swift */; };
+		ED14FA7C21AAA30F002B65E0 /* FamilyDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED14FA7721AAA30F002B65E0 /* FamilyDetailsModel.swift */; };
 		ED5DA1AD21AA01C900DBFEDB /* AccountPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1A821AA01C900DBFEDB /* AccountPresenter.swift */; };
 		ED5DA1AE21AA01C900DBFEDB /* AccountRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1A921AA01C900DBFEDB /* AccountRouter.swift */; };
 		ED5DA1AF21AA01C900DBFEDB /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5DA1AA21AA01C900DBFEDB /* AccountViewController.swift */; };
@@ -109,6 +114,11 @@
 		ED130E5E21A9B058001C898F /* ticTicTic.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ticTicTic.wav; sourceTree = "<group>"; };
 		ED130E6821A9B1C7001C898F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		ED130E6B21A9B934001C898F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ED14FA7321AAA30F002B65E0 /* FamilyDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyDetailsPresenter.swift; sourceTree = "<group>"; };
+		ED14FA7421AAA30F002B65E0 /* FamilyDetailsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyDetailsRouter.swift; sourceTree = "<group>"; };
+		ED14FA7521AAA30F002B65E0 /* FamilyDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyDetailsViewController.swift; sourceTree = "<group>"; };
+		ED14FA7621AAA30F002B65E0 /* FamilyDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyDetailsCell.swift; sourceTree = "<group>"; };
+		ED14FA7721AAA30F002B65E0 /* FamilyDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyDetailsModel.swift; sourceTree = "<group>"; };
 		ED5DA1A821AA01C900DBFEDB /* AccountPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountPresenter.swift; sourceTree = "<group>"; };
 		ED5DA1A921AA01C900DBFEDB /* AccountRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRouter.swift; sourceTree = "<group>"; };
 		ED5DA1AA21AA01C900DBFEDB /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +197,7 @@
 				ED5DA1A521AA00EF00DBFEDB /* Account */,
 				ED5DA1A621AA00FF00DBFEDB /* Transactions */,
 				ED5DA1A721AA013D00DBFEDB /* Family */,
+				ED14FA7221AAA27F002B65E0 /* FamilyDetails */,
 			);
 			path = taco_ios;
 			sourceTree = "<group>";
@@ -288,6 +299,18 @@
 				ED130E6B21A9B934001C898F /* User.swift */,
 			);
 			name = Menu;
+			sourceTree = "<group>";
+		};
+		ED14FA7221AAA27F002B65E0 /* FamilyDetails */ = {
+			isa = PBXGroup;
+			children = (
+				ED14FA7521AAA30F002B65E0 /* FamilyDetailsViewController.swift */,
+				ED14FA7321AAA30F002B65E0 /* FamilyDetailsPresenter.swift */,
+				ED14FA7421AAA30F002B65E0 /* FamilyDetailsRouter.swift */,
+				ED14FA7621AAA30F002B65E0 /* FamilyDetailsCell.swift */,
+				ED14FA7721AAA30F002B65E0 /* FamilyDetailsModel.swift */,
+			);
+			name = FamilyDetails;
 			sourceTree = "<group>";
 		};
 		ED5DA1A521AA00EF00DBFEDB /* Account */ = {
@@ -461,6 +484,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED14FA7921AAA30F002B65E0 /* FamilyDetailsRouter.swift in Sources */,
+				ED14FA7A21AAA30F002B65E0 /* FamilyDetailsViewController.swift in Sources */,
 				ED130E6921A9B1C7001C898F /* LoginService.swift in Sources */,
 				ED130E3C21A9B058001C898F /* LoginPresenter.swift in Sources */,
 				ED130E2521A9B058001C898F /* AppViewController.swift in Sources */,
@@ -469,7 +494,9 @@
 				ED130E3A21A9B058001C898F /* LoginViewController.swift in Sources */,
 				ED5DA1AE21AA01C900DBFEDB /* AccountRouter.swift in Sources */,
 				ED130E1621A9B058001C898F /* AppDelegate.swift in Sources */,
+				ED14FA7B21AAA30F002B65E0 /* FamilyDetailsCell.swift in Sources */,
 				ED5DA1AD21AA01C900DBFEDB /* AccountPresenter.swift in Sources */,
+				ED14FA7821AAA30F002B65E0 /* FamilyDetailsPresenter.swift in Sources */,
 				ED5DA1C321AA020200DBFEDB /* FamilyViewController.swift in Sources */,
 				ED5DA1B721AA01E500DBFEDB /* TransactionsPresenter.swift in Sources */,
 				ED130E3E21A9B058001C898F /* LoginRouter.swift in Sources */,
@@ -479,6 +506,7 @@
 				ED130E2D21A9B058001C898F /* AppMenuRouter.swift in Sources */,
 				ED5DA1B921AA01E500DBFEDB /* TransactionsViewController.swift in Sources */,
 				ED130E2921A9B058001C898F /* AppMenuViewController.swift in Sources */,
+				ED14FA7C21AAA30F002B65E0 /* FamilyDetailsModel.swift in Sources */,
 				ED5DA1C221AA020200DBFEDB /* FamilyRouter.swift in Sources */,
 				ED130E2B21A9B058001C898F /* AppMenuPresenter.swift in Sources */,
 				ED5DA1C421AA020200DBFEDB /* FamilyCell.swift in Sources */,

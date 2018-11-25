@@ -9,20 +9,26 @@
 import UIKit
 
 protocol TransactionsViewProtocol: class {
-    
+    func refresh()
 }
 
 final class TransactionsPresenter {
     
-    unowned var view: TransactionsViewProtocol
-    
-    var model: TransactionsModel?
+    weak var view: TransactionsViewProtocol?
     
     init(view: TransactionsViewProtocol) {
         self.view = view
     }
     
+    private(set) var transactions: [Account] = [] {
+        didSet {
+            view?.refresh()
+        }
+    }
     
+    func fetch() {
+        
+    }
     
 }
 

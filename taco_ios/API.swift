@@ -23,6 +23,8 @@ class RestAPI {
     
     enum Endpoint: String {
         case users
+        case groups
+        case accounts
     }
     
     enum Result {
@@ -30,10 +32,10 @@ class RestAPI {
         case failure(String)
     }
     
-    func request(method: Method, endpoint: Endpoint, id: Int? = nil, completionHandler: @escaping (Result) -> Void) {
+    func request(method: Method, endpoint: Endpoint, id: Int? = nil, additional: Endpoint? = nil, completionHandler: @escaping (Result) -> Void) {
         var urlString = baseURL + endpoint.rawValue
         if let id = id { urlString = urlString + "/" + String(id) }
-//        if method == .GET { urlString = urlString + ".json"}
+        if let add = additional { urlString = urlString + "/" + add.rawValue }
         
         guard let url = URL(string: urlString) else { return }
         var request = URLRequest(url: url)
@@ -78,26 +80,70 @@ class RestAPI {
         dataTask.resume()
     }
     
-    func fetchUser(id: Int, completionHandler: @escaping (User?) -> Void) {
-        request(method: .GET, endpoint: .users, id: id) { result in
+    func fetchGroups(id: Int, completionHandler: @escaping (Groups) -> Void) {
+        request(method: .GET, endpoint: .users, id: id, additional: .groups) { result in
             switch result {
             case .succes(let jsonData):
                 
-                guard let json = jsonData as? [[String: Any]] else {
-//                    BasicAlert.showInfoAlert(title: "Error", message: "There is no json data as [[String: Any]]")
+                guard let array = jsonData as? [Any] else {
                     return
                 }
+                var groups: [Group] = []
+                array.forEach({ obj in
+                    guard let dict = obj as? [String: Any] else { return }
+                    groups.append(Group(id: dict["id"] as! Int,
+                                        name: dict["name"] as! String,
+                                        usersCount: dict["users_count"] as! Int))
+                })
                 
-//                let array = json.compactMap { dict -> Employ? in
-//                    guard let id = dict["id"] as? Int,
-//                        let name = dict["name"] as? String,
-//                        let surName = dict["surname"] as? String else {
-//                            return nil
-//                    }
-//                    return Employ(id: String(id), name: name, surName: surName)
-//                }
-//                completionHandler(array)
-//
+                completionHandler(groups)
+                
+            case .failure(let error):
+                print("error")
+            }
+        }
+    }
+    
+    func fetchAccounts(id: Int, completionHandler: @escaping (Accounts) -> Void) {
+        request(method: .GET, endpoint: .users, id: id, additional: .accounts) { result in
+            switch result {
+            case .succes(let jsonData):
+                
+                guard let array = jsonData as? [Any] else {
+                    return
+                }
+                var accounts: [Account] = []
+                array.forEach({ obj in
+                    guard let dict = obj as? [String: Any] else { return }
+                    accounts.append(Account(number: dict["number"] as! String,
+                                        type: dict["type"] as! String,
+                                        description: dict["description"] as! String))
+                })
+                
+                completionHandler(accounts)
+                
+            case .failure(let error):
+                print("error")
+            }
+        }
+    }
+    func fetchMembers(id: Int, completionHandler: @escaping (Members) -> Void) {
+        request(method: .GET, endpoint: .groups, id: id, additional: .users) { result in
+            switch result {
+            case .succes(let jsonData):
+                
+                guard let array = jsonData as? [Any] else {
+                    return
+                }
+                var members: Members = []
+                array.forEach({ obj in
+                    guard let dict = obj as? [String: Any] else { return }
+                    members.append(Member(id: dict["id"] as! Int,
+                                            name: dict["name"] as! String))
+                })
+                
+                completionHandler(members)
+                
             case .failure(let error):
                 print("error")
             }

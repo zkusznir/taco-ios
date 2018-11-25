@@ -9,20 +9,26 @@
 import UIKit
 
 protocol AccountViewProtocol: class {
-    
+    func refresh()
 }
 
 final class AccountPresenter {
     
-    unowned var view: AccountViewProtocol
-    
-    var model: AccountModel?
+    weak var view: AccountViewProtocol?
     
     init(view: AccountViewProtocol) {
         self.view = view
     }
     
+    private(set) var accounts: [Account] = [] {
+        didSet {
+            view?.refresh()
+        }
+    }
     
+    func fetch() {
+        RestAPI().fetchAccounts(id: 1) { [weak self] in self?.accounts = $0 }
+    }
     
 }
 

@@ -8,10 +8,8 @@
 
 import Foundation
 
-struct AccountModel {
-    
-    
-    
-    
-}
+typealias Accounts = [Account]
 
+struct Account {
+    let number, type, description: String
+}

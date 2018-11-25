@@ -9,14 +9,22 @@
 import UIKit
 
 protocol FamilyViewProtocol: class {
-    
+    func refresh()
 }
 
 final class FamilyPresenter {
     
-    unowned var view: FamilyViewProtocol
+    weak var view: FamilyViewProtocol?
     
-    var model: FamilyModel?
+    private(set) var groups: Groups = [] {
+        didSet {
+            view?.refresh()
+        }
+    }
+    
+    func fetch() {
+        RestAPI().fetchGroups(id: 1) { [weak self] in self?.groups = $0 }
+    }
     
     init(view: FamilyViewProtocol) {
         self.view = view

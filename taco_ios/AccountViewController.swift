@@ -41,6 +41,8 @@ final class AccountViewController: HeaderViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        presenter.fetch()
+        
         titleLabel.text = "Konto"
         iconImageView.image = #imageLiteral(resourceName: "bank")
         upperLabel.text = "dostępne środki"
@@ -56,16 +58,21 @@ final class AccountViewController: HeaderViewController {
 }
 
 extension AccountViewController: AccountViewProtocol {
-    
+    func refresh() {
+        tableView.reloadData()
+    }
 }
 
 extension AccountViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 11
+        return presenter.accounts.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: AccountCell.self)) as! AccountCell
+        cell.upperLabel.text = presenter.accounts[indexPath.row].type
+        cell.loverLabel.text = presenter.accounts[indexPath.row].number
+//        cell.rightLabel.text = presenter.accounts[indexPath.row].description
         return cell
     }
 }
